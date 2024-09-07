@@ -23,11 +23,6 @@ form.addEventListener('submit', function (event) {
         alert("Please enter a valid email address.");
         return;
     }
-    const yearRegex = /^\d{4}$/;
-    if (!yearRegex.test(workYears)) {
-        alert("Please enter a valid number of years worked.");
-        return;
-    }
     // Clear previous resume
     resumeContainer.innerHTML = '';
     // Dynamically generate the resume HTML

@@ -27,12 +27,6 @@ form.addEventListener('submit', function(event: Event) {
         return;
     }
     
-    const yearRegex = /^\d{4}$/;
-    if (!yearRegex.test(workYears)) {
-        alert("Please enter a valid number of years worked.");
-        return;
-    }
-
     // Clear previous resume
     resumeContainer.innerHTML = '';
 
